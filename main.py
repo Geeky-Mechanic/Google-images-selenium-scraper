@@ -1,17 +1,20 @@
 from os import listdir
-import time
 from re import sub
 from search_and_download import search_and_download
 
+# ----> EDIT HERE <----
+# Enter the path to the chromium driver here, either absolute or relative to this file
+chrome_driver_path = "chromedriver"
+
+# CLI prompts for querying
 query = input("Write your search words : ")
 num_query = input("How many images? : ")
-directory = input("In which directory (absolute path or relative to calling directory)? : ")
+directory = input("In which directory should the images be saved (absolute path or relative to calling directory)? : ")
 print(f"Images will be save to {directory}")
 
-search_and_download(search_term=query, driver_path="chromedriver",
-                    target_path=directory, number_images=int(num_query))
 
-time.sleep(5)
+search_and_download(search_term=query, driver_path=chrome_driver_path,
+                    target_path=directory, number_images=int(num_query))
 
 
 def snake_case(s):

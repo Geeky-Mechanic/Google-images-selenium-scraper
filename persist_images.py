@@ -4,6 +4,8 @@ import io
 import requests as requests
 from PIL import Image
 
+image_content = None
+
 
 def persist_image(folder_path:str,url:str):
     global image_content

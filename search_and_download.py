@@ -8,7 +8,9 @@ from persist_images import persist_image
 
 
 def search_and_download(search_term: str, driver_path: str, target_path='./images', number_images=5):
+    # Create the webdriver service
     service = Service(driver_path)
+
     target_folder = os.path.join(target_path, '_'.join(search_term.lower().split(' ')))
 
     if not os.path.exists(target_folder):
