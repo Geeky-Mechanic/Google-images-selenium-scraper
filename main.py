@@ -4,7 +4,7 @@ from search_and_download import search_and_download
 
 # ----> EDIT HERE <----
 # Enter the path to the chromium driver here, either absolute or relative to this file
-chrome_driver_path = "./chromedriver"
+chrome_driver_path = "chromedriver"
 
 # CLI prompts for querying
 query = input("Write your search words : ")
