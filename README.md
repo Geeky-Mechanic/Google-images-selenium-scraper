@@ -2,7 +2,6 @@
 
 ## Alternatively, you can use the Google Colab here : https://colab.research.google.com/github/Geeky-Mechanic/Google-images-selenium-scraper/blob/master/Google_images_selenium_scraper.ipynb
 
-Just make a copy in Google Drive and fire it up!
 
 To use this repository :
 
