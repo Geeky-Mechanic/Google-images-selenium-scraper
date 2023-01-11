@@ -9,8 +9,7 @@ chrome_driver_path = "chromedriver"
 # CLI prompts for querying
 web_text_query = input("Write your search words : ")
 number_of_images_in_query = input("How many images? : ")
-directory_to_save = input("In which directory should the images be saved (absolute path or relative to calling "
-                          "directory)? : ")
+directory_to_save = input("In which directory should the images be saved? : ")
 print(f"Images will be saved to {directory_to_save}")
 
 
