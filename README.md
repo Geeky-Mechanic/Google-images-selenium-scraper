@@ -1,6 +1,6 @@
 # An image scraper made for Google images using python and selenium
 
-## Alternatively, you can use the Google Colab here : https://colab.research.google.com/drive/1PA4t9uVL9s8hvtz-ybIQfAVh1i0436dl?usp=sharing
+## Alternatively, you can use the Google Colab here : https://colab.research.google.com/github/Geeky-Mechanic/Google-images-selenium-scraper/blob/master/Google_images_selenium_scraper.ipynb
 
 Just make a copy in Google Drive and fire it up!
 
