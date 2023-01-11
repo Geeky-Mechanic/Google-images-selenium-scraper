@@ -7,14 +7,15 @@ from search_and_download import search_and_download
 chrome_driver_path = "chromedriver"
 
 # CLI prompts for querying
-query = input("Write your search words : ")
-num_query = input("How many images? : ")
-directory = input("In which directory should the images be saved (absolute path or relative to calling directory)? : ")
-print(f"Images will be saved to {directory}")
+web_text_query = input("Write your search words : ")
+number_of_images_in_query = input("How many images? : ")
+directory_to_save = input("In which directory should the images be saved (absolute path or relative to calling "
+                          "directory)? : ")
+print(f"Images will be saved to {directory_to_save}")
 
 
-search_and_download(search_term=query, driver_path=chrome_driver_path,
-                    target_path=directory, number_images=int(num_query))
+search_and_download(search_term=web_text_query, driver_path=chrome_driver_path,
+                    target_path=directory_to_save, number_images=int(number_of_images_in_query))
 
 
 def snake_case(s):
@@ -24,9 +25,9 @@ def snake_case(s):
                 s.replace('-', ' '))).split()).lower()
 
 
-files = listdir(directory + "/" + snake_case(query))
+files = listdir(directory_to_save + "/" + snake_case(web_text_query))
 print("")
 print("-----------------------------------------------------------------------------")
 print("")
-print(f"Successfully downloaded {len(files)} to {directory}")
+print(f"Successfully downloaded {len(files)} to {directory_to_save}")
 print("")
