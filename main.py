@@ -10,7 +10,7 @@ chrome_driver_path = "chromedriver"
 query = input("Write your search words : ")
 num_query = input("How many images? : ")
 directory = input("In which directory should the images be saved (absolute path or relative to calling directory)? : ")
-print(f"Images will be save to {directory}")
+print(f"Images will be saved to {directory}")
 
 
 search_and_download(search_term=query, driver_path=chrome_driver_path,
