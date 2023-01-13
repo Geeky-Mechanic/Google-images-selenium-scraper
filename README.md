@@ -11,7 +11,7 @@ git clone https://github.com/Geeky-Mechanic/Google-images-selenium-scraper.git
 ```
 2. Install the dependencies
 ```commandline
-pip3 install selenium Pillow
+pip3 install selenium Pillow duplicate_images
 ```
 3. Install the appropriate driver for chromium : https://chromedriver.chromium.org/downloads
 4. Edit the `main.py` file and add the path to the chromedriver file where indicated
